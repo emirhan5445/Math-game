@@ -1,5 +1,4 @@
 import random
-#import time
 def who_goes_first():   
     if random.randint(0,1) == 0:
         return "computer"
@@ -19,10 +18,6 @@ def computer_guess():
         computer_guesses.append(find_number)
     else:
         None
-#def player_choice():
-#    target_number = int(input("choose a number between 0 and 20\t"))
-#def computer_choice():
-#    target_number = random.choice([*range(21)])
 def winner(target_number,find_number,guess):
     if turn == "computer":
         if guess == target_number:
